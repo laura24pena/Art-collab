@@ -1,0 +1,69 @@
+/* src/styles/global.css */
+
+/* Standar height of navbar */
+:root {
+  --navbar-height: 72px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Tipografía y colores base */
+body {
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* El root ocupa toda la pantalla y deja que el contenido crezca */
+#root {
+  min-height: 100vh;
+}
+
+/* Shell de la app: Navbar arriba, contenido, Footer abajo */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El main deja espacio para el navbar fijo */
+.app-content {
+  flex: 1;
+  padding-top: var(--navbar-height);
+}
+
+/* Que nunca se desborde horizontalmente */
+.app-content,
+.homepage,
+.about-page,
+.login-page,
+.signup-page,
+.reset-body,
+.forgot-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Links por defecto */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
