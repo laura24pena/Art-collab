@@ -1,0 +1,157 @@
+/* CONTENEDOR GENERAL DE LA PÁGINA */
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+  /* Fondo continuo para evitar “bandas” separadas */
+  background: linear-gradient(180deg, #f3bdec, #ffd768);
+  padding: 80px 8% 100px;
+}
+
+/* TÍTULO "ABOUT US" */
+.about-title-section {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.about-title-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1b2f72;
+}
+
+/* VISION SECTION (side-by-side) */
+.vision-section {
+  padding: 0; /* ya tenemos padding en .about-page */
+}
+
+.vision-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.vision-text {
+  flex: 1;
+  color: #000000;
+}
+
+.vision-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.vision-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.vision-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.vision-image img {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+
+/* MISSION SECTION (3 columns) */
+.mission-section {
+  padding-top: 60px;
+  text-align: center;
+  color: black;
+}
+
+.mission-title {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: #1b2f72;
+}
+
+.mission-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.mission-card {
+  background: white;
+  padding: 24px 20px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.mission-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.mission-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.mission-card p {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-page {
+    padding: 70px 6% 80px;
+  }
+
+  .vision-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-text {
+    order: 1;
+  }
+
+  .vision-image {
+    order: 0;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .vision-text h1 {
+    font-size: 1.8rem;
+  }
+}
