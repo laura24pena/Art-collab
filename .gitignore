@@ -1,0 +1,44 @@
+# -------------------------
+# Node / Monorepo
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Build / Output
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+frontend/.vite/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Environment files (keep only the examples)
+.env
+.env.*
+backend/.env
+backend/.env.local
+frontend/.env
+frontend/.env.local
+
+!backend/.env.example
+!frontend/.env.example
+
+# Misc
+*.pid
+*.seed
+*.tgz

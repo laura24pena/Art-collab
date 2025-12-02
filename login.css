@@ -1,0 +1,43 @@
+body {
+  font-family: Times New Roman, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Layout --*/
+  /*--container--*/
+
+ /* --login form to the left--*/
+
+
+/*---Form---*/
+
+label {
+  display: block;
+}
+
+.forgot-password {
+  font-size: 0.8rem;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+/*---Right side Image---*/
+.img {
+  border-radius: 8px;
+}
+
+/*---Footer---*/
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+
