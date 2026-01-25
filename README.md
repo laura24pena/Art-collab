@@ -2,6 +2,7 @@ ArtCollab is an online platform designed to bring artists together in one shared
 
 This repository represents the Minimum Viable Product (MVP) developed as a semester-long project, with an emphasis on clean architecture, real-world workflows, and scalable design decisions.
 
+
 ##Goal & MVP Scope
 
 **Primary Goal:**
@@ -21,6 +22,7 @@ Audio and video uploads
 Advanced collaboration tools
 Public comments and rating systems
 
+
 **Development Approach**
 This project follows an Agile (Scrum) methodology to allow iterative development and continuous improvement.
 
@@ -29,9 +31,10 @@ Sprint phases: Planning, Development, Review, Retrospective
 Total duration: 14 weeks (7 sprints)
 This approach supports flexibility, learning, and gradual feature expansion.
 
-**Tech Stack**
-Frontend
 
+**Tech Stack**
+
+#Frontend
 Languages: HTML, CSS, JavaScript
 Framework: React + Vite
 State Management: Redux
@@ -42,8 +45,7 @@ HTTP Client: Axios / Fetch
 Notifications: react-hot-toast
 Wireframes: WebFlow
 
-Backend
-
+#Backend
 Runtime: Node.js
 Framework: Express.js
 Database: MongoDB (via Mongoose)
@@ -55,19 +57,19 @@ Security:
 Auth middleware
 Environment-based configuration
 
-**Project Architecture**
 
+**Project Architecture**
 The application is split into two independent services that communicate over HTTP:
 artcollab-frontend/ → React + Vite (SPA)
 artcollab-backend/ → Express + MongoDB (REST API)
 
-**Development URLs**
 
+**Development URLs**
 Frontend: http://localhost:5173
 Backend API: http://localhost:5001/api
 
-**Frontend Structure**
 
+**Frontend Structure**
 Key frontend files and directories:
 
 src/main.jsx – Application entry point
