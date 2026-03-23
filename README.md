@@ -2,10 +2,10 @@ Art-Collab is an interactive web application designed to allow users to share, e
 
 **Features**
 
-Interactive UI with dynamic components
-Scroll-triggered animations for enhanced engagement
-Responsive design for seamless use across devices
-Modular React components for scalable development
+- Interactive UI with dynamic components
+- Scroll-triggered animations for enhanced engagement
+- Responsive design for seamless use across devices
+- Modular React components for scalable development
 
 **Technologies Used**
 
